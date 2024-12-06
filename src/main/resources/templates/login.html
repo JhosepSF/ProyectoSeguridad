@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/3d-fluency/94/user-shield.png">
+  <link rel="stylesheet" href="/css/login.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+  <div id="logo"> 
+    <h1><i>Login To Information Security</i></h1>
+  </div> 
+
+  <section class="stark-login">
+	<form id="loginForm">
+      <div id="fade-box">
+        <input type="text" name="username" id="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <div class="mb-3">
+          <div
+            id="captcha"
+            class="g-recaptcha"
+            data-sitekey="6Ld9I0wqAAAAAGropbxxzsMgBJ0WSrWMm1FrwaMp">
+          </div>
+        </div>
+        <button type="submit">Log In</button> 
+      </div>
+    </form>
+
+    <div class="hexagons">
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <br>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <br>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+      <span>&#x2B22;</span>
+    </div>      
+  </section> 
+
+  <div id="circle1">
+    <div id="inner-cirlce1">
+      <h2></h2>
+    </div>
+  </div>
+
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <script src="/js/login.js"></script>
+</body>
+</html>

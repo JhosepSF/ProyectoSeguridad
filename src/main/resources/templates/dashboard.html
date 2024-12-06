@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/3d-fluency/94/user-shield.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Admin Panel</h2>
+            </div>
+			<ul class="sidebar-menu">
+			    <li><a href="/dashboard/usuarios/activos"><i class="fas fa-user-check"></i> Usuarios Activos</a></li>
+			    <li><a href="/dashboard/usuarios/inactivos"><i class="fas fa-user-times"></i> Usuarios Inactivos</a></li>
+			    <li><a href="/empresas"><i class="fas fa-building"></i> Empresas</a></li>
+			    <li><a href="/login" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
+			</ul>
+        </nav>
+    </div>
+	<script src="/js/usuariosactivos.js"></script>
+</body>
+</html>

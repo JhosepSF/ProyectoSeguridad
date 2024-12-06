@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas</title>
+    <link rel="stylesheet" href="/css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/3d-fluency/94/user-shield.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Empresas</h1>
+
+        <button id="openModalBtn" class="btn-primary">Agregar Empresa</button>
+		<button href="/login" onclick="logout()" class="btn-danger">Salir</button>
+
+        <div id="modalForm" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h2>Crear Nueva Empresa</h2>
+                <form id="empresaForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ruc">RUC</label>
+                        <input type="text" id="ruc" name="ruc" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sector">Sector</label>
+                        <input type="text" id="sector" name="sector" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numeroempleados">Número de Empleados</label>
+                        <input type="number" id="numeroempleados" name="numeroempleados" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País</label>
+                        <input type="text" id="pais" name="pais" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Guardar Empresa</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="companyCards" class="company-cards">
+            <!-- Aquí se listarán las empresas dinámicamente -->
+        </div>
+    </div>
+    
+    <script src="/js/empresas.js"></script>
+</body>
+</html>
